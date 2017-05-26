@@ -9,6 +9,10 @@
 
 ################Class##############################
 class Product
+  @@import_tax = 0.25
+  @@tax_exempt = 0.00
+
+
 
   attr_reader :base_price, :tax_rate, :name
   attr_accessor :quantity
