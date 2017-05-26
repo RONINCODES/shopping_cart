@@ -9,15 +9,15 @@
 
 ################Class##############################
 class Product
-end
+
 
 
 
 ################Initialize_Method######################
-def initialize(name, base_price, tax_rate)
+def initialize(name, base_price)
   @name = name
   @base_price = base_price
-  @tax_rate = tax_rate
+  @tax_rate = 0.13
 
 end
 
@@ -32,3 +32,10 @@ end
 
 
 ##############Instance Methods################
+  def total_price
+    @base_price * @tax_rate + @base_price
+  end
+
+
+
+end

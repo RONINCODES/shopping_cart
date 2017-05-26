@@ -1,23 +1,24 @@
 #Shopping Cart and Product Project
 
+###########REQUIRE#############################
+require_relative 'product'
 
 ################Class##############################
-class Shopping_cart
+class ShoppingCart
 
 
-end
 
-def self.create
-end
+
+
 
 
 
 ################Initialize_Method######################
-def Initialize
+  def initialize
 
 
-  @my_shopping_cart =[]
-
+    @my_shopping_cart =[]
+  end
 
 
 
@@ -30,3 +31,4 @@ def Initialize
 
 
 ##############Instance Methods################
+end
