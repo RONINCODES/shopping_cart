@@ -17,7 +17,7 @@ class ShoppingCart
   def initialize
 
 
-    @my_shopping_cart =[]
+    @products =[]
   end
 
 
@@ -31,4 +31,27 @@ class ShoppingCart
 
 
 ##############Instance Methods################
+  def add(product)
+    @products << product
+  end
+
+
+
+
+
+
 end
+
+
+
+
+
+
+##############Testing Output#########################3
+soap = Product.new("soap", 2.00)
+my_cart = ShoppingCart.new
+puts soap.total_price
+
+my_cart.add(soap)
+
+puts my_cart.inspect
