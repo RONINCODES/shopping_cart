@@ -10,14 +10,17 @@
 ################Class##############################
 class Product
 
-  attr_reader :base_price, :tax_rate
+  attr_reader :base_price, :tax_rate, :name
+  attr_accessor :quantity
+
 
 
 ################Initialize_Method######################
-  def initialize(name, base_price)
+  def initialize(name, base_price, quantity = 1)
     @name = name
     @base_price = base_price
     @tax_rate = 0.13
+    @quantity = quantity
 
   end
 
@@ -33,7 +36,11 @@ class Product
 
 ##############Instance Methods################
   def total_price
-    @base_price * @tax_rate + @base_price
+    (@base_price * @tax_rate + @base_price) * @quantity
+  end
+
+  def total_price_each
+    (@base_price * @tax_rate + @base_price)
   end
 
 
