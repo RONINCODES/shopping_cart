@@ -10,16 +10,16 @@
 ################Class##############################
 class Product
 
-attr_reader :base_price
+  attr_reader :base_price, :tax_rate
 
 
 ################Initialize_Method######################
-def initialize(name, base_price)
-  @name = name
-  @base_price = base_price
-  @tax_rate = 0.13
+  def initialize(name, base_price)
+    @name = name
+    @base_price = base_price
+    @tax_rate = 0.13
 
-end
+  end
 
 
 

@@ -48,6 +48,14 @@ class ShoppingCart
     sum
   end
 
+  def total_cost_after_tax
+    sum = 0
+    @products.each do |product|
+      sum += product.base_price * product.tax_rate + product.base_price
+    end
+    sum
+  end
+
 
 
 end
@@ -70,3 +78,5 @@ my_cart.add(rope)
 puts my_cart.inspect
 
 puts my_cart.total_cost_pre_tax
+
+puts my_cart.total_cost_after_tax
