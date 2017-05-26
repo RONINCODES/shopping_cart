@@ -10,7 +10,7 @@
 ################Class##############################
 class Product
 
-
+attr_reader :base_price
 
 
 ################Initialize_Method######################
